@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Survey</title>
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+</head>
+<body>
+<div class="container">
+    <h2>Join our survey</h2>
+    <form action="survey" method="post">
+        <label>Email:</label>
+        <input type="email" name="email" required>
+
+        <label>First Name:</label>
+        <input type="text" name="firstName" required>
+
+        <label>Last Name:</label>
+        <input type="text" name="lastName" required>
+
+        <label>How did you hear about us?</label>
+        <div class="options">
+            <input type="radio" name="heardFrom" value="Search Engine"> Search engine
+            <input type="radio" name="heardFrom" value="Word of Mouth"> Word of mouth
+            <input type="radio" name="heardFrom" value="Other"> Other
+        </div>
+
+        <label class="subtitle">Would you like to receive announcements about new CDs and special offers?</label>
+        <label>
+            <input type="checkbox" name="wantsUpdates" value="Yes"> YES, I'd like that.
+        </label>
+
+        <label>Please contact me by:</label>
+        <select name="contactVia">
+            <option value="Email">Email</option>
+            <option value="Postal Mail">Postal Mail</option>
+            <option value="Both">Both</option>
+        </select>
+
+        <button type="submit" class="btn">Submit</button>
+    </form>
+    <div class="footer">© 2025 Huỳnh Ngọc Thạch</div>
+</div>
+</body>
+</html>

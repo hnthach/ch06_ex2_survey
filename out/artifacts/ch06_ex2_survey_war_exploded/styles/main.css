@@ -1,0 +1,100 @@
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    background: linear-gradient(135deg, #89f7fe, #66a6ff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    line-height: 1.6; /* giãn dòng đẹp */
+}
+
+.container {
+    background: #fff;
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    max-width: 420px;
+    width: 100%;
+    text-align: left;
+}
+
+/* Tiêu đề có gradient động */
+h2 {
+    text-align: center;
+    font-size: 26px;
+    font-weight: 700;
+    background: linear-gradient(90deg, #2e86de, #8e44ad, #2ecc71);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 300% 300%;
+    animation: gradientMove 5s infinite;
+    margin-bottom: 25px;
+}
+
+@keyframes gradientMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #006666;
+}
+
+input[type="text"], input[type="email"], select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    outline: none;
+}
+
+.options {
+    margin-top: 5px;
+}
+.options input {
+    margin-right: 5px;
+}
+
+.subtitle {
+    margin-top: 15px;
+    font-weight: bold;
+    color: #006666;
+}
+
+.btn {
+    margin-top: 20px;
+    width: 100%;
+    padding: 12px;
+    background: #2e86de;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.btn:hover {
+    background: #1b4f72;
+}
+
+.label {
+    font-weight: bold;
+    color: #006666;
+    display: inline-block;
+    width: 110px;
+}
+.value {
+    color: #333;
+}
+
+.footer {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 12px;
+    color: #888;
+}
